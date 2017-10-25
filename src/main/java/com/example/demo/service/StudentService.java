@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
-public interface StudentService {
+import com.example.demo.model.StudentAccount;
 
+public interface StudentService {
+	StudentAccount studentLogin(String account , String password);
 }

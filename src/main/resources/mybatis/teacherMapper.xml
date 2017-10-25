@@ -23,6 +23,6 @@
 		parameterType="java.lang.String">
 		select
 		<include refid="Base_Column_List" />
-		from teacher where teacher_id = {#teacherId,jdbcType=VARCHAR}
+		from teacher where teacher_id = #{teacherId,jdbcType=VARCHAR}
 	</select>
 </mapper>

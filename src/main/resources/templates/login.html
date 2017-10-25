@@ -30,8 +30,7 @@
 							</a>
 						</li>
 						<li class="">						
-							<a href="index.html" class="">
-								<i class="icon-chevron-left"></i>
+							<a href="/" class="">
 								Back to Homepage
 							</a>
 						</li>
@@ -42,19 +41,23 @@
 	</div> <!-- /navbar -->
 	<div class="account-container">
 		<div class="content clearfix">
-			<form action="#" method="post">
+			<form action="/login" method="post">
 				<h1>Member Login</h1>
 				<div class="login-fields">
 					<p>Please provide your details</p>
 					<div class="field">
-						<label for="username">Username</label>
-						<input type="text" id="username" name="username" value="" placeholder="Username" class="login username-field" />
+						<label for="username">Username:</label>
+						<input type="text" id="account" name="account" value="" placeholder="Username" class="login username-field" />
 					</div> <!-- /field -->
 					<div class="field">
 						<label for="password">Password:</label>
 						<input type="password" id="password" name="password" value="" placeholder="Password" class="login password-field"/>
 					</div> <!-- /password -->
 				</div> <!-- /login-fields -->
+				<div class="field" hidden="true">
+						<label for="username">status:</label>
+						<input type="text" id="status" name="status" th:value="${status}"/>
+					</div> <!-- /field -->
 				<div class="login-actions">
 					<span class="login-checkbox">
 						<input id="Field" name="Field" type="checkbox" class="field login-checkbox" value="First Choice" tabindex="4" />

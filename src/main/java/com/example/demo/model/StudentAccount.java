@@ -1,13 +1,49 @@
 package com.example.demo.model;
 
+import java.util.Date;
+
 public class StudentAccount {
 	private int id;
 	private String account;
 	private String password;
-	private String student_id;
-	private String teacher_id;
+	private String studentId;
+	private String teacherId;
+	private Date createTime;
+	private Date modifyTime;
 
 	public void studentAccount() {
+	}
+
+	public String getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
+	}
+
+	public String getTeacherId() {
+		return teacherId;
+	}
+
+	public void setTeacherId(String teacherId) {
+		this.teacherId = teacherId;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public Date getModifyTime() {
+		return modifyTime;
+	}
+
+	public void setModifyTime(Date modifyTime) {
+		this.modifyTime = modifyTime;
 	}
 
 	public int getId() {
@@ -33,21 +69,4 @@ public class StudentAccount {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	public String getStudent_id() {
-		return student_id;
-	}
-
-	public void setStudent_id(String student_id) {
-		this.student_id = student_id;
-	}
-
-	public String getTeacher_id() {
-		return teacher_id;
-	}
-
-	public void setTeacher_id(String teacher_id) {
-		this.teacher_id = teacher_id;
-	}
-
 }
